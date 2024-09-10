@@ -1,0 +1,12 @@
+E:\Example\Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.deps.json
+E:\Example\Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.dll
+E:\Example\Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.pdb
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.GeneratedMSBuildEditorConfig.editorconfig
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.AssemblyInfoInputs.cache
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.AssemblyInfo.cs
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.csproj.CoreCompileInputs.cache
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.dll
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\refint\Identity.Contract.dll
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.pdb
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\ref\Identity.Contract.dll
+E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.csproj.AssemblyReference.cache

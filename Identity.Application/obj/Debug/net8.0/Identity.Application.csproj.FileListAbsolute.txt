@@ -1,0 +1,15 @@
+E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.deps.json
+E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.dll
+E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.pdb
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.AssemblyInfoInputs.cache
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.AssemblyInfo.cs
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.csproj.CoreCompileInputs.cache
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.dll
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\refint\Identity.Application.dll
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.pdb
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\ref\Identity.Application.dll
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.csproj.AssemblyReference.cache
+E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Domain.dll
+E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Domain.pdb
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.59D253F8.Up2Date

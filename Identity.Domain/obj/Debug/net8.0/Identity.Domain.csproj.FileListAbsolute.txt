@@ -1,0 +1,12 @@
+E:\Example\Identity\Identity.Domain\bin\Debug\net8.0\Identity.Domain.deps.json
+E:\Example\Identity\Identity.Domain\bin\Debug\net8.0\Identity.Domain.dll
+E:\Example\Identity\Identity.Domain\bin\Debug\net8.0\Identity.Domain.pdb
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.csproj.AssemblyReference.cache
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.AssemblyInfoInputs.cache
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.AssemblyInfo.cs
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.csproj.CoreCompileInputs.cache
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.dll
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\refint\Identity.Domain.dll
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\Identity.Domain.pdb
+E:\Example\Identity\Identity.Domain\obj\Debug\net8.0\ref\Identity.Domain.dll
