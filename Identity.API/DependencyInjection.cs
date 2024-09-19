@@ -65,6 +65,16 @@ namespace Identity.API
                     policy.Requirements.Add(new TokenBlacklistRequirement()));
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyMethod();
+                });
+            });
+
             
             
 

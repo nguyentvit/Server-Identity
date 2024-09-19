@@ -17,3 +17,4 @@ E:\Example\Identity\Identity.Infrastructure\obj\Debug\net8.0\Identity.Infrastruc
 E:\Example\Identity\Identity.Infrastructure\obj\Debug\net8.0\ref\Identity.Infrastructure.dll
 E:\Example\Identity\Identity.Infrastructure\bin\Debug\net8.0\Identity.Application.dll
 E:\Example\Identity\Identity.Infrastructure\bin\Debug\net8.0\Identity.Application.pdb
+E:\Example\Identity\Identity.Infrastructure\obj\Debug\net8.0\Identity.Infrastructure.sourcelink.json
