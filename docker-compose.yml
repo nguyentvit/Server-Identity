@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+ redisdb:
+  image: redis
+ 
+ sqlserverdb:
+  image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+
+ identity.api:
+  image: ${DOCKER_REGISTRY-}identityapi
+  build:
+   context: .
+   dockerfile: Identity.API/Dockerfile
+
+volumes:
+  sqlserver_data:
+
+networks:
+ db_net:
+  name: db_net

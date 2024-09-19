@@ -1,0 +1,69 @@
+name: dockercompose8971649998701877326
+services:
+  redisdb:
+    container_name: redisdb
+    environment:
+      REDIS_DATABASES: "16"
+      REDIS_PASSWORD: nguyenqb242
+      REDIS_PORT: "6379"
+    image: redis
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /var/lib/redis
+        target: /root/redis
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /etc/redis/redis.conf
+        target: /usr/local/etc/redis/redis.conf
+        bind:
+          create_host_path: true
+  sqlserverdb:
+    container_name: sqlserverdb
+    entrypoint:
+      - /bin/bash
+      - /usr/src/app/init.sh
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: ',Nguyenqb242,'
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    networks:
+      db_net: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: sqlserver_data
+        target: /var/opt/mssql
+        volume: {}
+      - type: bind
+        source: E:\Example\Identity\Identity.Infrastructure\Database\CreateTables.sql
+        target: /usr/src/app/CreateTables.sql
+        bind:
+          create_host_path: true
+      - type: bind
+        source: E:\Example\Identity\Identity.Infrastructure\Scripts\init.sh
+        target: /usr/src/app/init.sh
+        bind:
+          create_host_path: true
+networks:
+  db_net:
+    name: db_net
+  default:
+    name: dockercompose8971649998701877326_default
+volumes:
+  sqlserver_data:
+    name: dockercompose8971649998701877326_sqlserver_data

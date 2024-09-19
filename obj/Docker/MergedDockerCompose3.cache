@@ -1,0 +1,31 @@
+name: dockercompose8971649998701877326
+services:
+  redisdb:
+    container_name: redisdb
+    environment:
+      REDIS_DATABASES: "16"
+      REDIS_PASSWORD: nguyenqb242
+      REDIS_PORT: "6379"
+    image: redis
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: /var/lib/redis
+        target: /root/redis
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /etc/redis/redis.conf
+        target: /usr/local/etc/redis/redis.conf
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose8971649998701877326_default

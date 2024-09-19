@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+ redisdb:
+  container_name: redisdb
+  environment:
+   - REDIS_PASSWORD=nguyenqb242
+   - REDIS_PORT=6379
+   - REDIS_DATABASES=16
+  restart: always
+  ports:
+  - "6379:6379"
+  volumes:
+  - /var/lib/redis:/root/redis
+  - /etc/redis/redis.conf:/usr/local/etc/redis/redis.conf
+ 
+ sqlserverdb:
+  container_name: sqlserverdb
+  environment:
+   - ACCEPT_EULA=Y
+   - SA_PASSWORD=,Nguyenqb242,
+   - MSSQL_PID=Express
+  ports:
+  - "1433:1433"
+  restart: always
+  volumes:
+  - sqlserver_data:/var/opt/mssql
+  - ./Identity.Infrastructure/Database/CreateTables.sql:/usr/src/app/CreateTables.sql
+  - ./Identity.Infrastructure/Scripts/init.sh:/usr/src/app/init.sh
+  entrypoint: ["/bin/bash", "/usr/src/app/init.sh"]
+  networks:
+  - db_net  
+
+ identity.api:
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ConnectionStrings__DefaultConnection=Server=localhost,1433;Database=IdentityDb;User Id=SA;Password=,Nguyenqb242,;Trust Server Certificate=True;Connect Timeout=30;Encrypt=False;Application Intent=ReadWrite;Multi Subnet Failover=False
+      - ConnectionStrings__SqlConnection=Server=localhost,1433;Database=IdentityDb;User Id=SA;Password=,Nguyenqb242,;TrustServerCertificate=True;Connect Timeout=30;Encrypt=False
+   ports:
+      - "6200:8280"
+      - "6260:8281"
+   volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro

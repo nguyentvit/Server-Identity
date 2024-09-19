@@ -222,3 +222,4 @@ E:\Example\Identity\Identity.API\bin\Debug\net8.0\Asp.Versioning.Abstractions.dl
 E:\Example\Identity\Identity.API\bin\Debug\net8.0\Asp.Versioning.Http.dll
 E:\Example\Identity\Identity.API\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
 E:\Example\Identity\Identity.API\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+E:\Example\Identity\Identity.API\obj\Debug\net8.0\Identity.API.sourcelink.json

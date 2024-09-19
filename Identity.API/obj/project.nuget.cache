@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LQuNOBVExr6Ma+ojwfbqz4h7FN+u/1tEAokndwQmgdPcBx3Y4gfvEMHPNDQVaMbRmf/KAiwAQEooVOarH4AlQw==",
+  "dgSpecHash": "KtxUdUNEbHPghiD7ZTzJpEb9cPRRTypwO1AYSm2Ihf5VEsRKn/jTjBcswBSC3q1kQPFfuAxE7VIroijBN5TXcQ==",
   "success": true,
   "projectFilePath": "E:\\Example\\Identity\\Identity.API\\Identity.API.csproj",
   "expectedPackageFiles": [
@@ -100,6 +100,7 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

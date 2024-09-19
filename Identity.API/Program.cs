@@ -1,10 +1,10 @@
-using Duende.IdentityServer.EntityFramework.DbContexts;
+﻿using Duende.IdentityServer.EntityFramework.DbContexts;
 using Duende.IdentityServer.EntityFramework.Mappers;
 using Identity.API;
 using Identity.Application;
 using Identity.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -17,8 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 
-//InitializeDatabase(app);
-//Configure(app);
+InitializeDatabase(app);
 
 app.UseSwagger();
 app.UseSwaggerUI(options =>
@@ -46,6 +45,20 @@ void InitializeDatabase(IApplicationBuilder app)
 {
     using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
     {
+        var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+        // Kiểm tra và thêm role "Admin" nếu chưa có
+        if (!roleManager.RoleExistsAsync("Admin").Result)
+        {
+            roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
+        }
+
+        // Kiểm tra và thêm role "Customer" nếu chưa có
+        if (!roleManager.RoleExistsAsync("Customer").Result)
+        {
+            roleManager.CreateAsync(new IdentityRole("Customer")).Wait();
+        }
+
         serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
         var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
@@ -83,15 +96,4 @@ void InitializeDatabase(IApplicationBuilder app)
             context.SaveChanges();
         }
     }
-}
-
-void Configure(IApplicationBuilder app)
-{
-    var connectionMultiplexer = app.ApplicationServices.GetRequiredService<IConnectionMultiplexer>();
-    if (!connectionMultiplexer.IsConnected)
-    {
-        throw new Exception("Could not connect to Redis.");
-    }
-
-    // C?u h?nh ?ng d?ng...
 }
