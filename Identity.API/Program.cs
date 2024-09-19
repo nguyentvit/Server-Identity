@@ -5,6 +5,7 @@ using Identity.Application;
 using Identity.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -46,6 +47,20 @@ void InitializeDatabase(IApplicationBuilder app)
 {
     using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
     {
+        var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+        // Kiểm tra và thêm role "Admin" nếu chưa có
+        if (!roleManager.RoleExistsAsync("Admin").Result)
+        {
+            roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
+        }
+
+        // Kiểm tra và thêm role "Customer" nếu chưa có
+        if (!roleManager.RoleExistsAsync("Customer").Result)
+        {
+            roleManager.CreateAsync(new IdentityRole("Customer")).Wait();
+        }
+
         serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
         var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
