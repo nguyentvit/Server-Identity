@@ -67,16 +67,18 @@ namespace Identity.API
 
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", builder =>
+                options.AddPolicy("AllowFrontendLocalhost", builder =>
                 {
-                    builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyMethod();
+                    builder.WithOrigins("http://localhost:5173") // Chỉ cho phép nguồn này
+                           .AllowAnyHeader()                    // Cho phép bất kỳ header nào
+                           .AllowAnyMethod()                    // Cho phép các phương thức HTTP (GET, POST, PUT, DELETE)
+                           .AllowCredentials();                 // Nếu bạn sử dụng cookie hoặc token, cho phép credentials
                 });
             });
 
-            
-            
+
+
+
 
             return services;
         }
