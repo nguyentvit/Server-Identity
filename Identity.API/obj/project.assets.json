@@ -6792,19 +6792,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\vuduc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Example\\Identity\\Identity.API\\Identity.API.csproj",
+      "projectUniqueName": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.API\\Identity.API.csproj",
       "projectName": "Identity.API",
-      "projectPath": "E:\\Example\\Identity\\Identity.API\\Identity.API.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\Example\\Identity\\Identity.API\\obj\\",
+      "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.API\\Identity.API.csproj",
+      "packagesPath": "C:\\Users\\vuduc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vuduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6812,17 +6812,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Example\\Identity\\Identity.Contract\\Identity.Contract.csproj": {
-              "projectPath": "E:\\Example\\Identity\\Identity.Contract\\Identity.Contract.csproj"
+            "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Contract\\Identity.Contract.csproj": {
+              "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Contract\\Identity.Contract.csproj"
             },
-            "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
-              "projectPath": "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj"
+            "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj"
             }
           }
         }
@@ -6908,7 +6909,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

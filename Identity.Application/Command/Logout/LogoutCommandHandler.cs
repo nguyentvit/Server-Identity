@@ -21,7 +21,7 @@ namespace Identity.Application.Command.Logout
 
             var client = new HttpClient();
 
-            var token = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7100/connect/revocation")
+            var token = new HttpRequestMessage(HttpMethod.Post, "http://192.168.1.11:7100/connect/revocation")
             {
                 Content = new FormUrlEncodedContent(new[]
                 {   new KeyValuePair<string, string>("client_id", "magic"),

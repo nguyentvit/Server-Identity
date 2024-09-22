@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {}
+    "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\Example\\Identity\\Identity.Application\\Identity.Application.csproj": {
+    "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\Identity.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Example\\Identity\\Identity.Application\\Identity.Application.csproj",
+        "projectUniqueName": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\Identity.Application.csproj",
         "projectName": "Identity.Application",
-        "projectPath": "E:\\Example\\Identity\\Identity.Application\\Identity.Application.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\Example\\Identity\\Identity.Application\\obj\\",
+        "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\Identity.Application.csproj",
+        "packagesPath": "C:\\Users\\vuduc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vuduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj": {
-                "projectPath": "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj"
+              "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj": {
+                "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj"
               }
             }
           }
@@ -122,21 +123,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj": {
+    "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj",
         "projectName": "Identity.Domain",
-        "projectPath": "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\Example\\Identity\\Identity.Domain\\obj\\",
+        "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj",
+        "packagesPath": "C:\\Users\\vuduc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vuduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,6 +145,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -196,21 +198,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
+    "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
         "projectName": "Identity.Infrastructure",
-        "projectPath": "E:\\Example\\Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\Example\\Identity\\Identity.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\vuduc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vuduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,17 +220,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Example\\Identity\\Identity.Application\\Identity.Application.csproj": {
-                "projectPath": "E:\\Example\\Identity\\Identity.Application\\Identity.Application.csproj"
+              "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\Identity.Application.csproj": {
+                "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Application\\Identity.Application.csproj"
               },
-              "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj": {
-                "projectPath": "E:\\Example\\Identity\\Identity.Domain\\Identity.Domain.csproj"
+              "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj": {
+                "projectPath": "C:\\Users\\vuduc\\Source\\Repos\\Server-Identity\\Identity.Domain\\Identity.Domain.csproj"
               }
             }
           }
@@ -349,7 +352,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

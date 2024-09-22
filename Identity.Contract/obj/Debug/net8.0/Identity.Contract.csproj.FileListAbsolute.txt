@@ -10,3 +10,16 @@ E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\refint\Identity.Contract.
 E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.pdb
 E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\ref\Identity.Contract.dll
 E:\Example\Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.csproj.AssemblyReference.cache
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.deps.json
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.dll
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\bin\Debug\net8.0\Identity.Contract.pdb
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.csproj.AssemblyReference.cache
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.AssemblyInfoInputs.cache
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.AssemblyInfo.cs
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.csproj.CoreCompileInputs.cache
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.sourcelink.json
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.dll
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\refint\Identity.Contract.dll
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\Identity.Contract.pdb
+C:\Users\vuduc\Source\Repos\Server-Identity\Identity.Contract\obj\Debug\net8.0\ref\Identity.Contract.dll

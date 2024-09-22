@@ -29,7 +29,7 @@ namespace Identity.Application.Command.Login
             
             var client = new HttpClient();
 
-            var token = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7100/connect/token")
+            var token = new HttpRequestMessage(HttpMethod.Post, "http://192.168.1.11:7100/connect/token")
             {
                 Content = new FormUrlEncodedContent(new[]
                 {

@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 }
 var app = builder.Build();
 
-
+app.UseCors("AllowAll");
 //InitializeDatabase(app);
 //Configure(app);
 

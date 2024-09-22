@@ -161,21 +161,21 @@ namespace Identity.Infrastructure
                 .AddJwtBearer(options =>
                 {
                     options.SaveToken = true;
-                    options.Authority = "https://localhost:7100/";
+                    options.Authority = "http://192.168.1.11:7100/";
                     options.RequireHttpsMetadata = false;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
                         ValidateIssuer = true,
-                        ValidIssuer = "https://localhost:7100/",
+                        ValidIssuer = "http://192.168.1.11:7100/",
                         ValidateAudience = true,
-                        ValidAudience = "https://localhost:7100/resources",
+                        ValidAudience = "http://192.168.1.11:7100/resources",
                         ValidateLifetime = true,
                         ClockSkew = TimeSpan.Zero,
                         IssuerSigningKeyResolver = (token, securityToken, kid, validationParameters) =>
                         {
                             var client = new HttpClient();
-                            var response = client.GetStringAsync("https://localhost:7100/.well-known/openid-configuration/jwks").Result;
+                            var response = client.GetStringAsync("http://192.168.1.11:7100/.well-known/openid-configuration/jwks").Result;
                             var keys = JsonConvert.DeserializeObject<JsonWebKeySet>(response).Keys;
                             return keys;
                         }
@@ -217,7 +217,7 @@ namespace Identity.Infrastructure
                 })
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost:7100/";
+                    options.Authority = "http://192.168.1.11:7100/";
                     options.ClientId = "web-client";
                     options.ClientSecret = "web-client-secret";
                     options.ResponseType = "code";
