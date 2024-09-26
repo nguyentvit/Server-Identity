@@ -45,12 +45,13 @@ namespace Identity.Infrastructure.Services
         {
             user.UserName = user.Email;
 
+            user.EmailConfirmed = true;
             var result = await base.CreateAsync(user, password);
 
-            if (result.Succeeded)
-            {
-                await _mediator.Publish(new UserCreatedDomainEvent(user.Id, user.Email));
-            }
+            //if (result.Succeeded)
+            //{
+            //    await _mediator.Publish(new UserCreatedDomainEvent(user.Id, user.Email));
+            //}
             return result;
         }
         public override async Task<IdentityResult> ConfirmEmailAsync(ApplicationUser user, string token)

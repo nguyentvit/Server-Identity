@@ -22,6 +22,9 @@ using Identity.Application.Command.RefreshTokenGoogle;
 using Identity.Application.Command.LoginGoogle;
 using Asp.Versioning;
 using Microsoft.AspNetCore.RateLimiting;
+using Identity.Application.Command.SendOtp;
+using Identity.Application.Command.VerifyOtpEmail;
+using Identity.Application.Command.RegisterUserWithOtp;
 
 namespace Identity.API.Controllers.v1
 {
@@ -270,6 +273,42 @@ namespace Identity.API.Controllers.v1
         {
             var a = 5;
             return Ok(a);
+        }
+        [HttpPost("send-otp-verify-email")]
+        public async Task<IActionResult> SendOtpVerifyEmail([FromBody] SendOtpVerifyEmailRequest request)
+        {
+            var command = _mapper.Map<SendOtpCommand>(request);
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                result => Ok(_mapper.Map<SendOtpResponse>(result)),
+                errors => Problem(errors)
+                );
+        }
+        [HttpPost("verify-otp-email")]
+        public async Task<IActionResult> VerifyOtpEmail([FromBody] VerifyOtpEmailRequest request)
+        {
+            var command = _mapper.Map<VerifyOtpEmailCommand>(request);
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                result => Ok(_mapper.Map<VerifyOtpEmailResponse>(result)),
+                errors => Problem(errors)
+                );
+        }
+        [HttpPost("register-with-otp")]
+        public async Task<IActionResult> RegisterWithOtp([FromBody] RegisterUserWithOtpRequest request)
+        {
+            var command = _mapper.Map<RegisterUserWithOtpCommand>(request);
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                result => Ok(_mapper.Map<RegisterUserWithOtpResponse>(result)),
+                errors => Problem(errors)
+                );
         }
     }
 }

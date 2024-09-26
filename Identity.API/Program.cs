@@ -6,15 +6,20 @@ using Identity.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
 using Microsoft.AspNetCore.Identity;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 {
+
     builder.Services
         .AddPresentation()
         .AddInfrastructure(builder.Configuration)
         .AddApplication();
 
 }
+
+var host = Dns.GetHostEntry(Dns.GetHostName());
+string serverIpAddress = host.AddressList.FirstOrDefault(ip => ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)?.ToString();
 var app = builder.Build();
 
 app.UseCors("AllowFrontendLocalhost");

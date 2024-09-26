@@ -76,10 +76,6 @@ namespace Identity.API
                 });
             });
 
-
-
-
-
             return services;
         }
     }

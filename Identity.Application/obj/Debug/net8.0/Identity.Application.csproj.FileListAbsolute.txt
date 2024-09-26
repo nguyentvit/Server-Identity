@@ -13,3 +13,4 @@ E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.c
 E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Domain.dll
 E:\Example\Identity\Identity.Application\bin\Debug\net8.0\Identity.Domain.pdb
 E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.59D253F8.Up2Date
+E:\Example\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.sourcelink.json

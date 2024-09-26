@@ -19,7 +19,6 @@ using StackExchange.Redis;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.Google;
-using Identity.Infrastructure.Common;
 
 namespace Identity.Infrastructure
 {
@@ -59,6 +58,7 @@ namespace Identity.Infrastructure
 
             services.AddSingleton<IRefreshTokenHasher, RefreshTokenHasher>();
             //services.AddScoped<IOTPPwRepository, OTPPwRepository>();
+            //services.AddSingleton<IIpAddress, IpAddress>();
 
 
 
@@ -250,6 +250,7 @@ namespace Identity.Infrastructure
                 });
                 services.AddScoped<ITokenBlacklistService, RedisTokenBlacklistService>();
                 services.AddScoped<ITokenWhitelistService, RedisTokenWhitelistService>();
+                services.AddScoped<ISendOtpService, SendOtpService>();
 
             }
 

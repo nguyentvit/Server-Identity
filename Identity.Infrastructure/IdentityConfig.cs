@@ -67,18 +67,6 @@ namespace Identity.Infrastructure
                     AllowedScopes = { "openid", "profile", "email", "offline_access", "magic" },
                     AllowOfflineAccess = true // Cấp refresh token nếu cần
                 }
-                //,
-                //new Client
-                //{
-                //    ClientId = "custom-client",
-                //    ClientSecrets = { new Secret("custom-client-secret".Sha256()) },
-                //    AllowedGrantTypes = { OidcConstants.GrantTypes.TokenExchange },
-                //    AllowedScopes = { "magic",
-                //        IdentityServerConstants.StandardScopes.OpenId,
-                //        IdentityServerConstants.StandardScopes.Email,
-                //        IdentityServerConstants.StandardScopes.Profile,
-                //    },
-                //}
             };
     }
 }
